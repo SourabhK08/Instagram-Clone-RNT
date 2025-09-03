@@ -1,19 +1,8 @@
-import { Text, TouchableOpacity, View } from "react-native";
+import { Redirect } from "expo-router";
+import React from "react";
 
-export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Sourabh</Text>
+const Index = () => {
+  return <Redirect href={"/(auth)/Login"} />;
+};
 
-      <TouchableOpacity onPress={() => alert('pressed')}>
-        <Text>Presss</Text>
-      </TouchableOpacity>
-    </View>
-  );
-}
+export default Index;
